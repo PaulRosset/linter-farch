@@ -1,0 +1,28 @@
+{
+  "name": "linter-farch",
+  "version": "0.1.0",
+  "description": " Linter for filename in CLI tool.",
+  "main": "./lib/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulRosset/linter-farch.git"
+  },
+  "keywords": [
+    "linter",
+    "filename",
+    "architecture"
+  ],
+  "author": "Paul Rosset <paulrosset96@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaulRosset/linter-farch/issues"
+  },
+  "homepage": "https://github.com/PaulRosset/linter-farch#readme",
+  "dependencies": {
+    "chalk": "^2.4.0",
+    "meow": "^4.0.0"
+  }
+}
