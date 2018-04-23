@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": " Linter for filename in CLI tool.",
   "main": "./lib/bundle.js",
+  "farch": {
+    "src": "([a-z]*-[0-9]{4})[.]*[a-z]*",
+    "src/utilities": "([a-z]*-[0-9]{4})[.]*[a-z]*"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,11 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/PaulRosset/linter-farch.git"
   },
-  "keywords": [
-    "linter",
-    "filename",
-    "architecture"
-  ],
+  "keywords": ["linter", "filename", "architecture"],
   "author": "Paul Rosset <paulrosset96@gmail.com>",
   "license": "MIT",
   "bugs": {
