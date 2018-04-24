@@ -43,7 +43,7 @@ const getFileNamesFromDir = inputs => {
   } catch (e) {
     if (e) {
       console.log(chalk.bold.red(e.message));
-      return;
+      process.exit(2);
     }
   }
 };
@@ -96,7 +96,7 @@ const main = cli => {
       });
     } catch (e) {
       if (e) {
-        console.log(e.message);
+        console.log(`      ${chalk.bold.red(e.message)}`);
       }
     }
   }

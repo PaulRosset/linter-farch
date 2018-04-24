@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "description": " Linter for filename in CLI tool.",
   "main": "./lib/bundle.js",
-  "farch": {
-    "src": "([a-z]*-[0-9]{4})[.]*[a-z]*",
-    "src/utilities": "([a-z]*-[0-9]{4})[.]*[a-z]*"
+  "bin": {
+    "farch": "cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
