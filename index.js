@@ -39,8 +39,8 @@ const assertFilesInDir = (files, path, regex) => {
     }));
 };
 
-export default (getInput = config => {
-  const { farch } = config.pkg;
+const getInput = config => {
+  const { farch } = config;
   const inputs = [];
   for (const key in farch) {
     inputs.push({ path: key, regex: farch[key] });
@@ -50,4 +50,6 @@ export default (getInput = config => {
   } else {
     return getFileNamesFromDir(inputs);
   }
-});
+};
+
+module.exports = getInput;

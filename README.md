@@ -14,6 +14,11 @@ yarn add linter-farch
 ## Usage
 
 ```js
+const getInput = require("linter-farch")
+
+const packageJsonFIle = {...}
+const report = getInput(packageJsonFile)
+console.log(report) // Return informations that can be used to display.
 ```
 
 ### More
