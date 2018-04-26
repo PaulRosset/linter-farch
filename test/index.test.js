@@ -25,7 +25,7 @@ const pkg2 = {
   version: "1.0.0",
   description: "",
   farch: {
-    "./test/example": "[a-z]*"
+    "test/example": "[a-z]*"
   },
   keywords: [],
   main: "src/index.js",
@@ -48,7 +48,7 @@ const pkg3 = {
   version: "1.0.0",
   description: "",
   farch: {
-    "./test/example": "[0-9]"
+    "test/example": "[0-9]"
   },
   keywords: [],
   main: "src/index.js",
@@ -71,7 +71,7 @@ const pkg4 = {
   version: "1.0.0",
   description: "",
   farch: {
-    "./dir": "[0-9]"
+    dir: "[0-9]"
   },
   keywords: [],
   main: "src/index.js",
