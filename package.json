@@ -14,7 +14,12 @@
     "type": "git",
     "url": "git+https://github.com/PaulRosset/linter-farch.git"
   },
-  "keywords": ["linter", "filename", "architecture", "lint-file"],
+  "keywords": [
+    "linter",
+    "filename",
+    "architecture",
+    "lint-file"
+  ],
   "author": "Paul Rosset <paulrosset96@gmail.com>",
   "license": "MIT",
   "bugs": {
