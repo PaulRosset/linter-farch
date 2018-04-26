@@ -19,8 +19,7 @@ const getFileNamesFromDir = inputs => {
     });
   } catch (e) {
     if (e) {
-      console.log(chalk.bold.red(e.message));
-      process.exit(2);
+      throw new Error(e);
     }
   }
 };
