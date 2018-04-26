@@ -1,10 +1,10 @@
 {
   "name": "linter-farch",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Linter for filename API.",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "eslint index.js && jest --coverage && codecov"
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,11 @@
   "homepage": "https://github.com/PaulRosset/linter-farch#readme",
   "dependencies": {},
   "devDependencies": {
-    "ava": "^0.25.0",
     "babel-eslint": "^8.2.3",
+    "codecov": "^3.0.0",
     "eslint": "^4.19.1",
     "eslint-plugin-prettier": "^2.6.0",
+    "jest": "^22.4.3",
     "prettier": "^1.12.1"
   }
 }
