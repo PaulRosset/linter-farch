@@ -6,6 +6,10 @@
   "scripts": {
     "test": "eslint index.js && jest --coverage && codecov"
   },
+  "jest": {
+    "coverageDirectory": "./test/coverage/",
+    "collectCoverage": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PaulRosset/linter-farch.git"
