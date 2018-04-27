@@ -3,6 +3,7 @@
 
 const fs = require("fs");
 const assert = require("assert");
+const join = require("path").join;
 
 const getFileNamesFromDir = inputs => {
   try {
@@ -27,12 +28,12 @@ const getFileNamesFromDir = inputs => {
 const assertFilesInDir = (files, path, regex) => {
   return files
     .filter(file => {
-      const stats = fs.statSync(`${path}/${file}`, "utf8");
+      const stats = fs.statSync(join(path, file), "utf8");
       return stats.isFile();
     })
     .map(file => ({
       fileName: file,
-      pathFileName: `${path}/${file}`,
+      pathFileName: join(path, file),
       isCorrectSyntax: new RegExp(regex).test(file),
       assertRegex: regex
     }));

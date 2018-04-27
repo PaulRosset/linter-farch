@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1524757819960" clover="3.2.0">
-  <project timestamp="1524757819961" name="All files">
-    <metrics statements="24" coveredstatements="24" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="6" elements="34" coveredelements="33" complexity="0" loc="24" ncloc="24" packages="1" files="1" classes="1">
+<coverage generated="1524821397923" clover="3.2.0">
+  <project timestamp="1524821397923" name="All files">
+    <metrics statements="25" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="6" elements="35" coveredelements="34" complexity="0" loc="25" ncloc="25" packages="1" files="1" classes="1">
       <file name="index.js" path="/home/polo/Documents/linter-farch/index.js">
-        <metrics statements="24" coveredstatements="24" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="6"/>
+        <metrics statements="25" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="6"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="21" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="30" count="26" type="stmt"/>
-        <line num="31" count="26" type="stmt"/>
-        <line num="33" count="18" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="42" count="4" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="22" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="31" count="14" type="stmt"/>
+        <line num="32" count="14" type="stmt"/>
+        <line num="34" count="10" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
         <line num="43" count="4" type="stmt"/>
         <line num="44" count="4" type="stmt"/>
-        <line num="45" count="3" type="stmt"/>
-        <line num="47" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="50" count="3" type="stmt"/>
-        <line num="54" count="1" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="48" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
       </file>
     </metrics>
   </project>
