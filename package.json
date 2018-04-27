@@ -1,6 +1,6 @@
 {
   "name": "linter-farch",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Linter for filename API.",
   "main": "index.js",
   "scripts": {
