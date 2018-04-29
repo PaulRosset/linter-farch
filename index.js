@@ -46,7 +46,7 @@ const getInput = config => {
     inputs.push({ path: key, regex: farch[key] });
   }
   if (inputs.length === 0) {
-    throw new Error("No farch config found in package.json!");
+    throw new Error("No farch config found in farch.js or package.json!");
   } else {
     return getFileNamesFromDir(inputs);
   }
