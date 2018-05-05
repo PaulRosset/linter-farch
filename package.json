@@ -7,7 +7,7 @@
     "farch": "cli.js"
   },
   "farch": {
-    "./media": "[0-9]*",
+    "./media": "[a-z]{4}.[a-z]{3}",
     "./src/": "[0-9]"
   },
   "scripts": {
