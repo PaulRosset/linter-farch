@@ -1,10 +1,17 @@
 {
   "name": "linter-farch",
-  "version": "1.1.2",
-  "description": "Linter for filename API.",
-  "main": "index.js",
+  "version": "1.1.3",
+  "description": "Linter filename, make sure the filename stay the same!",
+  "main": "src/index.js",
+  "bin": {
+    "farch": "cli.js"
+  },
+  "farch": {
+    "./media": "[0-9]*",
+    "./src/": "[0-9]"
+  },
   "scripts": {
-    "test": "eslint index.js && jest --coverage && codecov"
+    "test": "node cli.js && eslint index.js && jest --coverage && codecov"
   },
   "jest": {
     "coverageDirectory": "./test/coverage/",
@@ -21,7 +28,11 @@
     "url": "https://github.com/PaulRosset/linter-farch/issues"
   },
   "homepage": "https://github.com/PaulRosset/linter-farch#readme",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "load-json-file": "^4.0.0",
+    "meow": "^5.0.0"
+  },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "codecov": "^3.0.0",

@@ -1,4 +1,4 @@
-const apiFarch = require("../index");
+const apiFarch = require("../src/index");
 
 const pkg1 = {
   name: "new",
@@ -25,7 +25,7 @@ const pkg2 = {
   version: "1.0.0",
   description: "",
   farch: {
-    "./": "[a-z]*"
+    "./src": "[a-z]*"
   },
   keywords: [],
   main: "src/index.js",
@@ -92,7 +92,7 @@ const pkg4 = {
 test("When there is no config provided via package.json", () => {
   expect(() => {
     const report = apiFarch(pkg1);
-  }).toThrow("No farch config found in package.json!");
+  }).toThrow("No farch config found in farch.js or package.json!");
 });
 
 test("Expect a error throw, because dir did not exist", () => {

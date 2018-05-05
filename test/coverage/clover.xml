@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1524821397923" clover="3.2.0">
-  <project timestamp="1524821397923" name="All files">
+<coverage generated="1525526540007" clover="3.2.0">
+  <project timestamp="1525526540007" name="All files">
     <metrics statements="25" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="6" elements="35" coveredelements="34" complexity="0" loc="25" ncloc="25" packages="1" files="1" classes="1">
-      <file name="index.js" path="/home/polo/Documents/linter-farch/index.js">
+      <file name="index.js" path="/home/polo/Documents/linter-farch/src/index.js">
         <metrics statements="25" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="6"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
@@ -17,9 +17,9 @@
         <line num="23" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="2" type="stmt"/>
-        <line num="31" count="14" type="stmt"/>
-        <line num="32" count="14" type="stmt"/>
-        <line num="34" count="10" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
         <line num="43" count="4" type="stmt"/>
         <line num="44" count="4" type="stmt"/>
