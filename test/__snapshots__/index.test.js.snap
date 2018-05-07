@@ -2,4 +2,4 @@
 
 exports[`Expect to Match test directory filenames 1`] = `"[{\\"./src\\":[{\\"fileName\\":\\"index.js\\",\\"pathFileName\\":\\"src/index.js\\",\\"isCorrectSyntax\\":true,\\"assertRegex\\":\\"[a-z]*\\"}]}]"`;
 
-exports[`Expect to NOT match filename in root diretory 1`] = `"[{\\"./media\\":[{\\"fileName\\":\\"demo1.png\\",\\"pathFileName\\":\\"media/demo1.png\\",\\"isCorrectSyntax\\":true,\\"assertRegex\\":\\"[0-9]\\"},{\\"fileName\\":\\"demo2.png\\",\\"pathFileName\\":\\"media/demo2.png\\",\\"isCorrectSyntax\\":true,\\"assertRegex\\":\\"[0-9]\\"},{\\"fileName\\":\\"logo.png\\",\\"pathFileName\\":\\"media/logo.png\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"}]}]"`;
+exports[`Expect to NOT match filename in root diretory 1`] = `"[{\\"./media\\":[{\\"fileName\\":\\"demo1.png\\",\\"pathFileName\\":\\"media/demo1.png\\",\\"isCorrectSyntax\\":true,\\"assertRegex\\":\\"[0-9]\\"},{\\"fileName\\":\\"logo.png\\",\\"pathFileName\\":\\"media/logo.png\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"}]}]"`;

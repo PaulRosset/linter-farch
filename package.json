@@ -1,17 +1,13 @@
 {
   "name": "linter-farch",
-  "version": "1.1.3",
-  "description": "Linter filename, make sure the filename stay the same!",
+  "version": "1.2.0",
+  "description": "Linter filenames, make sure the filenames stay the same!",
   "main": "src/index.js",
   "bin": {
     "farch": "cli.js"
   },
-  "farch": {
-    "./media": "[a-z]{4}.[a-z]{3}",
-    "./src/": "[0-9]"
-  },
   "scripts": {
-    "test": "node cli.js && eslint index.js && jest --coverage && codecov"
+    "test": "eslint src/ && jest --coverage && codecov"
   },
   "jest": {
     "coverageDirectory": "./test/coverage/",
@@ -21,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/PaulRosset/linter-farch.git"
   },
-  "keywords": ["linter", "filename", "architecture", "lint-file"],
+  "keywords": ["linter", "filenames", "filenames", "architecture", "lint-file"],
   "author": "Paul Rosset <paulrosset96@gmail.com>",
   "license": "MIT",
   "bugs": {

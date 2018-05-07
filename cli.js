@@ -63,7 +63,7 @@ const main = () => {
         `${reportFinal.errors} Failed`
       )}`
     );
-    reportFinal.errors > 0 ? process.exit(2) : process.exit(0);
+    process.exit(reportFinal.errors > 0 ? 2 : 0);
   } catch (e) {
     if (e) {
       console.log(`      ${chalk.bold.red(e.message)}`);

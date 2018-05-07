@@ -7,7 +7,7 @@
 	<br>
 </h1>
 
-> API to control filenames of a project 👁
+> Make sure the filenames stay the same, control them! 👁
 
 [![Travis CI Build Status](https://travis-ci.org/PaulRosset/linter-farch.svg?branch=master)](https://travis-ci.org/PaulRosset/linter-farch)
 [![npm version](https://badge.fury.io/js/linter-farch.svg)](https://badge.fury.io/js/linter-farch)
@@ -15,12 +15,13 @@
 
 ## Motivation
 
-More and more frameworks that have been created recently give the possibility to the user to write content in markdown, like [Gatsby](https://github.com/gatsbyjs/gatsby) or [Docusaurus](https://github.com/facebook/docusaurus) and sometimes if you collaborate with multiples persons on this markdown files, keeping an clean file name is more important than ever. That's why I created this tiny linter to force people to respect a filename architecture in order the keep everything clean and understandable.
+More and more frameworks that have been created recently give the possibility to the user to write content in markdown, like [Gatsby](https://github.com/gatsbyjs/gatsby) or [Docusaurus](https://github.com/facebook/docusaurus), and sometimes if you collaborate with multiples persons on this markdown files, keeping an clean file name is more important than ever. That's why I created this tiny linter to force people to respect a filename architecture in order the keep everything clean and understandable.  
+Of course, many other usage can be consider.
 
 ## Install
 
 ```sh
-yarn add linter-farch
+yarn add --dev linter-farch
 ```
 
 ## Usage
@@ -81,10 +82,12 @@ Insert it in your `package.json` file:
 }
 ```
 
+**And run `CI` on it !**
+
 ### Output
 
 <div align="center">
-	<img src="media/demo1.png" width="350"/> <img src="media/demo2.png" width="405"/>
+	<img src="media/demo1.png" width="320" alt="output-farch"/>
 </div>
 
 ## License
