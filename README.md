@@ -7,7 +7,7 @@
 	<br>
 </h1>
 
-> Make sure the filenames stay the same, control them! 👁
+> Make sure the file-names stay the same, control them! 👁
 
 [![Travis CI Build Status](https://travis-ci.org/PaulRosset/linter-farch.svg?branch=master)](https://travis-ci.org/PaulRosset/linter-farch)
 [![npm version](https://badge.fury.io/js/linter-farch.svg)](https://badge.fury.io/js/linter-farch)
@@ -15,8 +15,8 @@
 
 ## Motivation
 
-More and more frameworks that have been created recently give the possibility to the user to write content in markdown, like [Gatsby](https://github.com/gatsbyjs/gatsby) or [Docusaurus](https://github.com/facebook/docusaurus), and sometimes if you collaborate with multiples persons on this markdown files, keeping an clean file name is more important than ever. That's why I created this tiny linter to force people to respect a filename architecture in order the keep everything clean and understandable.  
-Of course, many other usage can be consider.
+More and more frameworks that have been created recently gave the possibility to the user to write content in markdown, like [Gatsby](https://github.com/gatsbyjs/gatsby) or [Docusaurus](https://github.com/facebook/docusaurus), but sometimes if you collaborate with multiples people on these markdown files, keeping a clean file-name is more important than ever. That's why I created this tiny linter to force people to respect a file-name architecture in order the keep everything clean and understandable.  
+Of course, many other usages can be considered.
 
 ## Install
 
@@ -27,7 +27,7 @@ yarn add --dev linter-farch
 ## Usage
 
 Once installed, a small and quick configuration is needed in the `package.json` file.  
-The `package.json` file is used here to avoid creating another file with a purpose of configuration.
+The `package.json` file is used here, to avoid creating another file with a purpose of configuration.
 
 ### Configuration:
 

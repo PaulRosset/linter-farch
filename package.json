@@ -1,6 +1,6 @@
 {
   "name": "linter-farch",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Linter filenames, make sure the filenames stay the same!",
   "main": "src/index.js",
   "bin": {
