@@ -94,7 +94,8 @@ const pkg5 = {
   version: "1.0.0",
   description: "",
   farch: {
-    test: "[0-9]"
+    src: "[0-9]",
+    "test/testFolder": "[0-9]"
   },
   keywords: [],
   main: "src/index.js",
