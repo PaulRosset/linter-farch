@@ -17,31 +17,6 @@ const displayRes = reportFinal => {
   process.exit(reportFinal.errors > 0 ? 2 : 0);
 };
 
-const display = report => {
-  report.map((dir, index) => {
-    const path = Object.keys(dir)[0];
-    console.log(chalk`    Directory: {blue.bold ${path}}`);
-    dir[path].map(file => {
-      reportFinal.all += 1;
-      if (!file.isCorrectSyntax) {
-        console.log(chalk`      {underline ${file.fileName}} - {red.bold ●}`);
-        console.log(
-          chalk`        {red.bold ${file.fileName}} doesn't match /${
-            file.assertRegex
-          }/`
-        );
-        reportFinal.errors += 1;
-      } else {
-        console.log(
-          chalk`        {underline ${file.fileName}} - {green.bold ✓}`
-        );
-        reportFinal.success += 1;
-      }
-    });
-  });
-  displayRes(reportFinal);
-};
-
 const displayRec = report => {
   report.map((dir, key) => {
     const path = Object.keys(dir);
@@ -68,6 +43,5 @@ const displayRec = report => {
 };
 
 module.exports = {
-  display,
   displayRec
 };

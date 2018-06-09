@@ -3,7 +3,6 @@
 
 const meow = require("meow");
 const chalk = require("chalk");
-const assert = require("assert");
 const getInput = require("./src/index");
 const path = require("path");
 const fs = require("fs");
@@ -30,12 +29,20 @@ const cli = meow(
 
 const main = () => {
   try {
-    const data = fs.existsSync(path.resolve("farch.json"))
-      ? loadJsonFile.sync(path.resolve("farch.json"))
-      : loadJsonFile.sync(path.resolve("package.json"));
-    const report = getInput(data, cli.flags);
-    console.log(chalk`\n    {bold ${"Report linter-farch:\n"}}`);
-    cli.flags.R ? displayRec(report) : display(report);
+    Promise.resolve()
+      .then(() => {
+        const data = fs.existsSync(path.resolve("farch.json"))
+          ? loadJsonFile.sync(path.resolve("farch.json"))
+          : loadJsonFile.sync(path.resolve("package.json"));
+        return data;
+      })
+      .then(data => {
+        return Promise.all(getInput(data, cli.flags)).then(report => report);
+      })
+      .then(dataToDisplay => {
+        console.log(chalk`\n    {bold ${"Report linter-farch:\n"}}`);
+        displayRec(dataToDisplay);
+      });
   } catch (e) {
     if (e) {
       console.log(chalk`      {red.bold ${e.message}}`);
