@@ -7,7 +7,7 @@ const getInput = require("./src/index");
 const path = require("path");
 const fs = require("fs");
 const loadJsonFile = require("load-json-file");
-const { display, displayRec } = require("./src/display");
+const { displayRec } = require("./src/display");
 
 const cli = meow(
   `
