@@ -39,10 +39,13 @@ In the `package.json` file:
 {
   "farch": {
     "src": "([a-z]*-[0-9]{4})[.]*[a-z]*",
-    "src/utilities": "[a-z]*"
+    "src/utilities": "[a-z]*",
+    "src/utilities/*.js": "[a-z]"
   }
 }
 ```
+
+> You can use [`glob`](http://man7.org/linux/man-pages/man3/glob.3.html) as key/path to provide more flexibility to capture the wanted files.
 
 But, there is still the possibility to create a `farch.json` config file at the root of the project, essentially for the non-js project or if you don't want to put the configuration in your `package.json`.
 
@@ -63,6 +66,8 @@ Pass as `key`, the path from the root directory to the target directory, then in
 **Then, you are all set!**
 
 ### Execution
+
+To avoid creating tons of rules if you have a lot of directory nested and they apply to the same assertion you can pass `-R`, hence it will recursively check all the directory.
 
 At the root of your project:
 
