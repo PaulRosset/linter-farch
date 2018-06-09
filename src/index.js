@@ -2,6 +2,11 @@
 
 const globby = require("globby");
 
+const template = {
+  LOWER_CAMEL_CASE: "[a-z]",
+  UPPER_CAMEL_CASE: "zaeaze"
+};
+
 const assertFiles = (inputs, rec) => {
   return inputs.map(async file => {
     const filesToTest = await globby([file.path], {
@@ -14,9 +19,9 @@ const assertFiles = (inputs, rec) => {
         return {
           fileName: fileSimple[fileNameindex],
           pathFileName: fileToTest,
-          isCorrectSyntax: new RegExp(file.regex).test(
-            fileSimple[fileNameindex]
-          ),
+          isCorrectSyntax: new RegExp(
+            Array.isArray(file.regex) ? file.regex.join("|") : file.regex
+          ).test(fileSimple[fileNameindex]),
           assertRegex: file.regex
         };
       })
@@ -28,7 +33,20 @@ module.exports = (config, opts) => {
   const { farch } = config;
   const inputs = [];
   for (const key in farch) {
-    inputs.push({ path: key, regex: farch[key] });
+    const isRegexArray = Array.isArray(farch[key]);
+    if (!isRegexArray && typeof farch[key] !== "string")
+      throw new TypeError("Patterns must be a string or an array of strings");
+    if (isRegexArray && !farch[key].every(reg => typeof reg === "string"))
+      throw new TypeError("Template element must be a string");
+    inputs.push({
+      path: key,
+      regex: isRegexArray
+        ? farch[key].map(
+            templateInput =>
+              template[templateInput] ? template[templateInput] : templateInput
+          )
+        : farch[key]
+    });
   }
   if (inputs.length === 0) {
     throw new Error("No farch config found in farch.js or package.json!");
