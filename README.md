@@ -82,7 +82,7 @@ Insert it in your `package.json` file:
 ```json
 {
   "scripts": {
-    "test": "farch"
+    "test": "farch ((-R))"
   }
 }
 ```
