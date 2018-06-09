@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Non Recursive testing Expect to Match test directory filenames 1`] = `"[{\\"./src\\":[{\\"fileName\\":\\"display.js\\",\\"pathFileName\\":\\"src/display.js\\",\\"isCorrectSyntax\\":true,\\"assertRegex\\":\\"[a-z]*\\"},{\\"fileName\\":\\"index.js\\",\\"pathFileName\\":\\"src/index.js\\",\\"isCorrectSyntax\\":true,\\"assertRegex\\":\\"[a-z]*\\"}]}]"`;
+exports[`Non Recursive testing Expect a error throw, because dir did not exist 1`] = `
+Array [
+  Object {
+    "dir": Array [],
+  },
+]
+`;
+
+exports[`Non Recursive testing Expect to Match test directory filenames 1`] = `"[{\\"./src\\":[{\\"fileName\\":\\"display.js\\",\\"pathFileName\\":\\"src/display.js\\",\\"isCorrectSyntax\\":true,\\"assertRegex\\":\\"[a-z]*\\"},{\\"fileName\\":\\"index.js\\",\\"pathFileName\\":\\"src/index.js\\",\\"isCorrectSyntax\\":true,\\"assertRegex\\":\\"[a-z]*\\"},{\\"fileName\\":\\"linterCase.js\\",\\"pathFileName\\":\\"src/linterCase.js\\",\\"isCorrectSyntax\\":true,\\"assertRegex\\":\\"[a-z]*\\"}]}]"`;
 
 exports[`Non Recursive testing Expect to NOT match filename in root diretory 1`] = `"[{\\"./media\\":[{\\"fileName\\":\\"demo1.png\\",\\"pathFileName\\":\\"media/demo1.png\\",\\"isCorrectSyntax\\":true,\\"assertRegex\\":\\"[0-9]\\"},{\\"fileName\\":\\"logo.png\\",\\"pathFileName\\":\\"media/logo.png\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"}]}]"`;
 
-exports[`Recursive testing Expect to output a strucutre with all files contained in directory given in input 1`] = `"[{\\"src\\":[{\\"fileName\\":\\"display.js\\",\\"pathFileName\\":\\"src/display.js\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"},{\\"fileName\\":\\"index.js\\",\\"pathFileName\\":\\"src/index.js\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"}]},{\\"test/testFolder\\":[{\\"fileName\\":\\"test.txt\\",\\"pathFileName\\":\\"test/testFolder/testAgain/test.txt\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"}]}]"`;
+exports[`Non Recursive testing Expect to match without recursive 1`] = `"[{\\"src\\":[{\\"fileName\\":\\"display.js\\",\\"pathFileName\\":\\"src/display.js\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"},{\\"fileName\\":\\"index.js\\",\\"pathFileName\\":\\"src/index.js\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"},{\\"fileName\\":\\"linterCase.js\\",\\"pathFileName\\":\\"src/linterCase.js\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"}]},{\\"test/testFolder\\":[]}]"`;
+
+exports[`Recursive testing Expect to match with recursive 1`] = `"[{\\"src\\":[{\\"fileName\\":\\"display.js\\",\\"pathFileName\\":\\"src/display.js\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"},{\\"fileName\\":\\"index.js\\",\\"pathFileName\\":\\"src/index.js\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"},{\\"fileName\\":\\"linterCase.js\\",\\"pathFileName\\":\\"src/linterCase.js\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"}]},{\\"test/testFolder\\":[{\\"fileName\\":\\"test.txt\\",\\"pathFileName\\":\\"test/testFolder/testAgain/test.txt\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"},{\\"fileName\\":\\"testForSake.js\\",\\"pathFileName\\":\\"test/testFolder/testAgain/testForSake.js\\",\\"isCorrectSyntax\\":false,\\"assertRegex\\":\\"[0-9]\\"}]}]"`;
