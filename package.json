@@ -7,8 +7,12 @@
     "farch": "cli.js"
   },
   "scripts": {
-    "test": "eslint src/ && jest --coverage && codecov"
+    "test": "eslint src/ && jest --coverage && codecov",
+    "pretty": "prettier src/*.js --write"
   },
+  "pre-commit": [
+    "pretty"
+  ],
   "jest": {
     "coverageDirectory": "./test/coverage/",
     "collectCoverage": true
@@ -17,7 +21,13 @@
     "type": "git",
     "url": "git+https://github.com/PaulRosset/linter-farch.git"
   },
-  "keywords": ["linter", "filenames", "filenames", "architecture", "lint-file"],
+  "keywords": [
+    "linter",
+    "filenames",
+    "filenames",
+    "architecture",
+    "lint-file"
+  ],
   "author": "Paul Rosset <paulrosset96@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -36,6 +46,7 @@
     "eslint": "^4.19.1",
     "eslint-plugin-prettier": "^2.6.0",
     "jest": "^22.4.3",
+    "pre-commit": "^1.2.2",
     "prettier": "^1.12.1"
   }
 }
