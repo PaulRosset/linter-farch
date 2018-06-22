@@ -44,23 +44,24 @@ In the `package.json` file:
   }
 }
 ```
+
 > You can use [`glob`](http://man7.org/linux/man-pages/man3/glob.3.html) as key/path to provide more flexibility to capture the wanted files.
 
-- Creating regex can be hard or simply boring, that's why you can simply put template placeholder like this:
+* Creating regex can be hard or simply boring, that's why you can simply put template placeholder like this:
 
 ```json
 {
   "farch": {
     "src": "([a-z]*-[0-9]{4})[.]*[a-z]*",
-    "src/utilities": ["LOWER_CAMEL_CASE", "[a-z]*"],
+    "src/utilities": ["LOWER_CAMEL_CASE_JS", "[a-z]*"],
     "src/utilities/*.js": "[a-z]"
   }
 }
 ```
 
-You can find any template placeholder already create [here](https://github.com/PaulRosset/linter-farch/blob/master/src/template.js), feel free to contribute by adding more template/placeholder regex.
+You can find any template placeholder already create [here](https://github.com/PaulRosset/linter-farch/blob/master/src/template.js), feel free to contribute by adding more template/placeholder regex. The keys have to be of the following form: "XXX*XXX_XXX_YY", where \_XXX* is the name and _YY_ the extension of the file that we want to test.
 
-------
+---
 
 But, there is still the possibility to create a `farch.json` config file at the root of the project, essentially for the non-js project or if you don't want to put the configuration in your `package.json`.
 

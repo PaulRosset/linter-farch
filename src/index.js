@@ -1,7 +1,7 @@
 "use strict";
 
 const globby = require("globby");
-const template = require("./template")
+const template = require("./template");
 
 const assertFiles = (inputs, rec) => {
   return inputs.map(async file => {
