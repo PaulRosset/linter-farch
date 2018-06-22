@@ -44,8 +44,23 @@ In the `package.json` file:
   }
 }
 ```
-
 > You can use [`glob`](http://man7.org/linux/man-pages/man3/glob.3.html) as key/path to provide more flexibility to capture the wanted files.
+
+- Creating regex can be hard or simply boring, that's why you can simply put template placeholder like this:
+
+```json
+{
+  "farch": {
+    "src": "([a-z]*-[0-9]{4})[.]*[a-z]*",
+    "src/utilities": ["LOWER_CAMEL_CASE", "[a-z]*"],
+    "src/utilities/*.js": "[a-z]"
+  }
+}
+```
+
+You can find any template placeholder already create [here](https://github.com/PaulRosset/linter-farch/blob/master/src/template.js), feel free to contribute by adding more template/placeholder regex.
+
+------
 
 But, there is still the possibility to create a `farch.json` config file at the root of the project, essentially for the non-js project or if you don't want to put the configuration in your `package.json`.
 

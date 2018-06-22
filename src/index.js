@@ -1,11 +1,7 @@
 "use strict";
 
 const globby = require("globby");
-
-const template = {
-  LOWER_CAMEL_CASE: "[a-z]",
-  UPPER_CAMEL_CASE: "zaeaze"
-};
+const template = require("./template")
 
 const assertFiles = (inputs, rec) => {
   return inputs.map(async file => {
