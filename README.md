@@ -59,7 +59,7 @@ In the `package.json` file:
 }
 ```
 
-You can find any template placeholder already create [here](https://github.com/PaulRosset/linter-farch/blob/master/src/template.js), feel free to contribute by adding more template/placeholder regex. The keys have to be of the following form: "XXX*XXX_XXX_YY", where \_XXX* is the name and _YY_ the extension of the file that we want to test.
+You can find any template placeholder already created [here](https://github.com/PaulRosset/linter-farch/blob/master/src/template.js), feel free to contribute by adding more template/placeholder regex. The keys have to be of the following form: "XXX*XXX_XXX_YY", where \_XXX* is the name and _YY_ the extension of the file that we want to test.
 
 ---
 

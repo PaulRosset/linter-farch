@@ -3,6 +3,14 @@
 const globby = require("globby");
 const template = require("./template");
 
+const concatForRegex = tabOfRegex => {
+  let test = "";
+  for (const regex in tabOfRegex) {
+    test += `(${tabOfRegex[regex]})`;
+  }
+  return test;
+};
+
 const assertFiles = (inputs, rec) => {
   return inputs.map(async file => {
     const filesToTest = await globby([file.path], {
@@ -16,7 +24,7 @@ const assertFiles = (inputs, rec) => {
           fileName: fileSimple[fileNameindex],
           pathFileName: fileToTest,
           isCorrectSyntax: new RegExp(
-            Array.isArray(file.regex) ? file.regex.join("|") : file.regex
+            Array.isArray(file.regex) ? concatForRegex(file.regex) : file.regex
           ).test(fileSimple[fileNameindex]),
           assertRegex: file.regex
         };
