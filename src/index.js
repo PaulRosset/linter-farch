@@ -58,3 +58,5 @@ module.exports = (config, opts) => {
     return assertFiles(inputs, opts.R);
   }
 };
+
+module.exports.concatForRegex = concatForRegex;
